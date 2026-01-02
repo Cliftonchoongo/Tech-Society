@@ -1,6 +1,10 @@
 body {
   background-color: rgb(184, 150, 234) !important;
 }
+html, body {
+  height: 100%;
+  margin: 0;
+}
 
 * {
   margin: 0;
@@ -68,19 +72,18 @@ section:hover {
   background-position: center;
   background-repeat: no-repeat;
 
-  min-height: 100vh;   /* 🔥 THIS IS THE KEY */
-  width: 200%;
+  min-height: 100vh;   /* 🔥 REQUIRED */
+  width: 100%;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  color: white;
   text-align: center;
+  color: white;
   padding: 20px;
 }
-
 
   .gallery img {
     width: 100%;
